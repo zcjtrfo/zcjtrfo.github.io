@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accent Coaching</title>
+</head>
+<body>
+    <h1>Speak Clear, Confident Southern British English</h1>
+    <p>1-to-1 online coaching to help you sound natural and be understood.</p>
+    <p>Register your interest: <a href="mailto:youremail@example.com">Email me</a></p>
+</body>
+</html>
