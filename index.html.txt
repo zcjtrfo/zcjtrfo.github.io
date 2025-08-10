@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accent Coaching</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Southern British English Accent Coaching</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Speak Clear, Confident Southern British English</h1>
-    <p>1-to-1 online coaching to help you sound natural and be understood.</p>
-    <p>Register your interest: <a href="mailto:youremail@example.com">Email me</a></p>
+
+  <header>
+    <div class="container">
+      <h1>Speak Clear, Confident Southern British English</h1>
+      <p>1-to-1 online accent coaching to help you sound natural, be understood, and speak with confidence.</p>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I’m [Your Name], an accent coach specialising in Southern British English. I work with non-native speakers who want to feel confident and be understood in every conversation.</p>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="container">
+      <h2>Why Work With Me?</h2>
+      <ul>
+        <li>Be understood the first time without repeating yourself</li>
+        <li>Sound more natural in professional and social situations</li>
+        <li>Boost your speaking confidence</li>
+        <li>Learn practical pronunciation techniques you can use immediately</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Register Your Interest</h2>
+      <p>Fill in the form below and I’ll be in touch to arrange your free 1-to-1 online session.</p>
+      
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required />
+
+        <label for="message">Your main goal in improving your accent:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
