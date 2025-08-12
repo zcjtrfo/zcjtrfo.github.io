@@ -1,33 +1,55 @@
+/* ---------- Base Styling ---------- */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  background: #fafafa;
+  background: #f9f9fb;
   color: #333;
   line-height: 1.6;
 }
 
+/* Container */
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
 }
 
+/* ---------- Header / Hero ---------- */
 header {
-  background: #1e3d59;
+  background: linear-gradient(135deg, #1e3d59, #295f8a);
   color: #fff;
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 header h1 {
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  animation: fadeInDown 1s ease-out;
 }
 
+header p {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: auto;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* ---------- Sections ---------- */
 section {
   background: #fff;
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 6px;
+  margin: 30px 0;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 h2 {
@@ -35,10 +57,16 @@ h2 {
   color: #1e3d59;
 }
 
+/* ---------- Lists ---------- */
 ul {
   padding-left: 20px;
 }
 
+li {
+  margin-bottom: 8px;
+}
+
+/* ---------- Form ---------- */
 form {
   display: flex;
   flex-direction: column;
@@ -46,31 +74,56 @@ form {
 
 form label {
   margin: 10px 0 5px;
+  font-weight: 600;
 }
 
 form input, form textarea {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  border-color: #295f8a;
+  box-shadow: 0 0 5px rgba(41,95,138,0.3);
 }
 
 form button {
-  margin-top: 15px;
-  padding: 12px;
-  background: #1e3d59;
+  margin-top: 20px;
+  padding: 14px;
+  background: #ff6f3c;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 form button:hover {
-  background: #163247;
+  background: #e85c2d;
 }
 
+/* ---------- Footer ---------- */
 footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9em;
   color: #666;
+  background: #f0f0f3;
+  margin-top: 40px;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeInDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
 }
