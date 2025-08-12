@@ -14,6 +14,33 @@ body {
   padding: 20px;
 }
 
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1 1 400px;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  max-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 /* ---------- Header / Hero ---------- */
 header {
   background: linear-gradient(135deg, #1e3d59, #295f8a);
@@ -215,3 +242,5 @@ section:hover {
 html {
   scroll-behavior: smooth;
 }
+
+
