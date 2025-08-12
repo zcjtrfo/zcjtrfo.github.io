@@ -169,6 +169,16 @@
   form.addEventListener('submit', handleSubmit);
 </script>
 
+  <script>
+document.addEventListener("scroll", () => {
+  document.querySelectorAll("section").forEach(sec => {
+    const rect = sec.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 50) {
+      sec.classList.add("show");
+    }
+  });
+});
+</script>
 
   <footer>
     <div class="container">
@@ -178,6 +188,7 @@
 
 </body>
 </html>
+
 
 
 
